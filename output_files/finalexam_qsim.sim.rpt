@@ -1,0 +1,773 @@
+Simulator report for finalexam_qsim
+Fri Jun 07 00:25:22 2024
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 328 nodes    ;
+; Simulation Coverage         ;      13.15 % ;
+; Total Number of Transitions ; 835          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                       ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                     ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                  ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                        ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                         ;               ;
+; Vector input source                                                                        ; E:/Quartus13.0_project/final exam/output_files/Waveform.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                          ; On            ;
+; Check outputs                                                                              ; Off                                                         ; Off           ;
+; Report simulation coverage                                                                 ; On                                                          ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                          ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                          ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                          ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                         ; Off           ;
+; Detect glitches                                                                            ; Off                                                         ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                         ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                         ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                         ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                         ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                          ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                  ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                         ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                        ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport                                                   ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport                                                   ; Transport     ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      13.15 % ;
+; Total nodes checked                                 ; 328          ;
+; Total output ports checked                          ; 327          ;
+; Total output ports with complete 1/0-value coverage ; 43           ;
+; Total output ports with no 1/0-value coverage       ; 282          ;
+; Total output ports with no 1-value coverage         ; 282          ;
+; Total output ports with no 0-value coverage         ; 284          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                  ;
++---------------------------------------------+---------------------------------------------+------------------+
+; Node Name                                   ; Output Port Name                            ; Output Port Type ;
++---------------------------------------------+---------------------------------------------+------------------+
+; |text|clk_in                                ; |text|clk_in                                ; out              ;
+; |text|cnt100:inst4|74160:inst|45            ; |text|cnt100:inst4|74160:inst|45            ; out0             ;
+; |text|cnt100:inst4|74160:inst|6             ; |text|cnt100:inst4|74160:inst|6             ; regout           ;
+; |text|cnt100:inst4|74160:inst|9             ; |text|cnt100:inst4|74160:inst|9             ; regout           ;
+; |text|cnt100:inst4|74160:inst|13            ; |text|cnt100:inst4|74160:inst|13            ; out0             ;
+; |text|cnt100:inst4|74160:inst|49            ; |text|cnt100:inst4|74160:inst|49            ; out0             ;
+; |text|cnt100:inst4|74160:inst|46            ; |text|cnt100:inst4|74160:inst|46            ; out0             ;
+; |text|cnt100:inst4|74160:inst|8             ; |text|cnt100:inst4|74160:inst|8             ; regout           ;
+; |text|cnt100:inst4|74160:inst|12            ; |text|cnt100:inst4|74160:inst|12            ; out0             ;
+; |text|cnt100:inst4|74160:inst|28            ; |text|cnt100:inst4|74160:inst|28            ; out0             ;
+; |text|cnt100:inst4|74160:inst|7             ; |text|cnt100:inst4|74160:inst|7             ; regout           ;
+; |text|cnt100:inst4|74160:inst|11            ; |text|cnt100:inst4|74160:inst|11            ; out0             ;
+; |text|cnt100:inst4|74160:inst|50            ; |text|cnt100:inst4|74160:inst|50            ; out0             ;
+; |text|cnt100:inst4|74160:inst1|6            ; |text|cnt100:inst4|74160:inst1|6            ; regout           ;
+; |text|cnt100:inst4|74160:inst1|10           ; |text|cnt100:inst4|74160:inst1|10           ; out0             ;
+; |text|cnt100:inst4|74160:inst1|65           ; |text|cnt100:inst4|74160:inst1|65           ; out0             ;
+; |text|cnt100:inst4|74160:inst1|12           ; |text|cnt100:inst4|74160:inst1|12           ; out0             ;
+; |text|cnt100:inst4|74160:inst1|25           ; |text|cnt100:inst4|74160:inst1|25           ; out0             ;
+; |text|cnt100:inst4|74160:inst1|28           ; |text|cnt100:inst4|74160:inst1|28           ; out0             ;
+; |text|cnt100:inst4|74160:inst1|7            ; |text|cnt100:inst4|74160:inst1|7            ; regout           ;
+; |text|cnt100:inst4|74160:inst1|11           ; |text|cnt100:inst4|74160:inst1|11           ; out0             ;
+; |text|cnt100:inst4|74160:inst1|50           ; |text|cnt100:inst4|74160:inst1|50           ; out0             ;
+; |text|mxh:inst18|cnt100:inst|74160:inst|45  ; |text|mxh:inst18|cnt100:inst|74160:inst|45  ; out0             ;
+; |text|mxh:inst18|cnt100:inst|74160:inst|6   ; |text|mxh:inst18|cnt100:inst|74160:inst|6   ; regout           ;
+; |text|mxh:inst18|cnt100:inst|74160:inst|9   ; |text|mxh:inst18|cnt100:inst|74160:inst|9   ; regout           ;
+; |text|mxh:inst18|cnt100:inst|74160:inst|13  ; |text|mxh:inst18|cnt100:inst|74160:inst|13  ; out0             ;
+; |text|mxh:inst18|cnt100:inst|74160:inst|49  ; |text|mxh:inst18|cnt100:inst|74160:inst|49  ; out0             ;
+; |text|mxh:inst18|cnt100:inst|74160:inst|46  ; |text|mxh:inst18|cnt100:inst|74160:inst|46  ; out0             ;
+; |text|mxh:inst18|cnt100:inst|74160:inst|8   ; |text|mxh:inst18|cnt100:inst|74160:inst|8   ; regout           ;
+; |text|mxh:inst18|cnt100:inst|74160:inst|12  ; |text|mxh:inst18|cnt100:inst|74160:inst|12  ; out0             ;
+; |text|mxh:inst18|cnt100:inst|74160:inst|28  ; |text|mxh:inst18|cnt100:inst|74160:inst|28  ; out0             ;
+; |text|mxh:inst18|cnt100:inst|74160:inst|7   ; |text|mxh:inst18|cnt100:inst|74160:inst|7   ; regout           ;
+; |text|mxh:inst18|cnt100:inst|74160:inst|11  ; |text|mxh:inst18|cnt100:inst|74160:inst|11  ; out0             ;
+; |text|mxh:inst18|cnt100:inst|74160:inst|50  ; |text|mxh:inst18|cnt100:inst|74160:inst|50  ; out0             ;
+; |text|mxh:inst18|cnt100:inst|74160:inst1|6  ; |text|mxh:inst18|cnt100:inst|74160:inst1|6  ; regout           ;
+; |text|mxh:inst18|cnt100:inst|74160:inst1|10 ; |text|mxh:inst18|cnt100:inst|74160:inst1|10 ; out0             ;
+; |text|mxh:inst18|cnt100:inst|74160:inst1|65 ; |text|mxh:inst18|cnt100:inst|74160:inst1|65 ; out0             ;
+; |text|mxh:inst18|cnt100:inst|74160:inst1|12 ; |text|mxh:inst18|cnt100:inst|74160:inst1|12 ; out0             ;
+; |text|mxh:inst18|cnt100:inst|74160:inst1|25 ; |text|mxh:inst18|cnt100:inst|74160:inst1|25 ; out0             ;
+; |text|mxh:inst18|cnt100:inst|74160:inst1|28 ; |text|mxh:inst18|cnt100:inst|74160:inst1|28 ; out0             ;
+; |text|mxh:inst18|cnt100:inst|74160:inst1|7  ; |text|mxh:inst18|cnt100:inst|74160:inst1|7  ; regout           ;
+; |text|mxh:inst18|cnt100:inst|74160:inst1|11 ; |text|mxh:inst18|cnt100:inst|74160:inst1|11 ; out0             ;
+; |text|mxh:inst18|cnt100:inst|74160:inst1|50 ; |text|mxh:inst18|cnt100:inst|74160:inst1|50 ; out0             ;
++---------------------------------------------+---------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                       ;
++------------------------------------------------------+------------------------------------------------------+------------------+
+; Node Name                                            ; Output Port Name                                     ; Output Port Type ;
++------------------------------------------------------+------------------------------------------------------+------------------+
+; |text|ledR1                                          ; |text|ledR1                                          ; pin_out          ;
+; |text|inst                                           ; |text|inst                                           ; out0             ;
+; |text|inst31                                         ; |text|inst31                                         ; out0             ;
+; |text|inst30                                         ; |text|inst30                                         ; out0             ;
+; |text|inst7                                          ; |text|inst7                                          ; out0             ;
+; |text|ledY1                                          ; |text|ledY1                                          ; pin_out          ;
+; |text|inst13                                         ; |text|inst13                                         ; out0             ;
+; |text|ledG1                                          ; |text|ledG1                                          ; pin_out          ;
+; |text|inst12                                         ; |text|inst12                                         ; out0             ;
+; |text|ledr2                                          ; |text|ledr2                                          ; pin_out          ;
+; |text|ledy2                                          ; |text|ledy2                                          ; pin_out          ;
+; |text|inst14                                         ; |text|inst14                                         ; out0             ;
+; |text|ledg2                                          ; |text|ledg2                                          ; pin_out          ;
+; |text|inst11                                         ; |text|inst11                                         ; out0             ;
+; |text|SEG1                                           ; |text|SEG1                                           ; pin_out          ;
+; |text|inst53                                         ; |text|inst53                                         ; out0             ;
+; |text|inst37                                         ; |text|inst37                                         ; out0             ;
+; |text|inst43                                         ; |text|inst43                                         ; out0             ;
+; |text|inst38                                         ; |text|inst38                                         ; out0             ;
+; |text|inst50                                         ; |text|inst50                                         ; out0             ;
+; |text|inst55                                         ; |text|inst55                                         ; out0             ;
+; |text|inst41                                         ; |text|inst41                                         ; out0             ;
+; |text|inst47                                         ; |text|inst47                                         ; out0             ;
+; |text|inst42                                         ; |text|inst42                                         ; out0             ;
+; |text|inst58                                         ; |text|inst58                                         ; out0             ;
+; |text|inst40                                         ; |text|inst40                                         ; out0             ;
+; |text|inst52                                         ; |text|inst52                                         ; out0             ;
+; |text|inst66                                         ; |text|inst66                                         ; out0             ;
+; |text|inst68                                         ; |text|inst68                                         ; out0             ;
+; |text|inst67                                         ; |text|inst67                                         ; out0             ;
+; |text|inst70                                         ; |text|inst70                                         ; out0             ;
+; |text|inst69                                         ; |text|inst69                                         ; out0             ;
+; |text|inst72                                         ; |text|inst72                                         ; out0             ;
+; |text|inst74                                         ; |text|inst74                                         ; out0             ;
+; |text|inst73                                         ; |text|inst73                                         ; out0             ;
+; |text|inst76                                         ; |text|inst76                                         ; out0             ;
+; |text|inst75                                         ; |text|inst75                                         ; out0             ;
+; |text|inst59                                         ; |text|inst59                                         ; out0             ;
+; |text|inst63                                         ; |text|inst63                                         ; out0             ;
+; |text|inst62                                         ; |text|inst62                                         ; out0             ;
+; |text|inst65                                         ; |text|inst65                                         ; out0             ;
+; |text|inst64                                         ; |text|inst64                                         ; out0             ;
+; |text|SEG2                                           ; |text|SEG2                                           ; pin_out          ;
+; |text|SEG3                                           ; |text|SEG3                                           ; pin_out          ;
+; |text|SEG4                                           ; |text|SEG4                                           ; pin_out          ;
+; |text|SEG5                                           ; |text|SEG5                                           ; pin_out          ;
+; |text|SEG6                                           ; |text|SEG6                                           ; pin_out          ;
+; |text|SEG7                                           ; |text|SEG7                                           ; pin_out          ;
+; |text|s1                                             ; |text|s1                                             ; pin_out          ;
+; |text|s2                                             ; |text|s2                                             ; pin_out          ;
+; |text|s4                                             ; |text|s4                                             ; pin_out          ;
+; |text|s5                                             ; |text|s5                                             ; pin_out          ;
+; |text|s6                                             ; |text|s6                                             ; pin_out          ;
+; |text|inst60                                         ; |text|inst60                                         ; out0             ;
+; |text|inst71                                         ; |text|inst71                                         ; out0             ;
+; |text|inst77                                         ; |text|inst77                                         ; out0             ;
+; |text|inst61                                         ; |text|inst61                                         ; out0             ;
+; |text|cnt100:inst4|74160:inst1|45                    ; |text|cnt100:inst4|74160:inst1|45                    ; out0             ;
+; |text|cnt100:inst4|74160:inst1|9                     ; |text|cnt100:inst4|74160:inst1|9                     ; regout           ;
+; |text|cnt100:inst4|74160:inst1|13                    ; |text|cnt100:inst4|74160:inst1|13                    ; out0             ;
+; |text|cnt100:inst4|74160:inst1|49                    ; |text|cnt100:inst4|74160:inst1|49                    ; out0             ;
+; |text|cnt100:inst4|74160:inst1|46                    ; |text|cnt100:inst4|74160:inst1|46                    ; out0             ;
+; |text|cnt100:inst5|74160:inst|45                     ; |text|cnt100:inst5|74160:inst|45                     ; out0             ;
+; |text|cnt100:inst5|74160:inst|6                      ; |text|cnt100:inst5|74160:inst|6                      ; regout           ;
+; |text|cnt100:inst5|74160:inst|9                      ; |text|cnt100:inst5|74160:inst|9                      ; regout           ;
+; |text|cnt100:inst5|74160:inst|13                     ; |text|cnt100:inst5|74160:inst|13                     ; out0             ;
+; |text|cnt100:inst5|74160:inst|49                     ; |text|cnt100:inst5|74160:inst|49                     ; out0             ;
+; |text|cnt100:inst5|74160:inst|46                     ; |text|cnt100:inst5|74160:inst|46                     ; out0             ;
+; |text|cnt100:inst5|74160:inst|8                      ; |text|cnt100:inst5|74160:inst|8                      ; regout           ;
+; |text|cnt100:inst5|74160:inst|12                     ; |text|cnt100:inst5|74160:inst|12                     ; out0             ;
+; |text|cnt100:inst5|74160:inst|28                     ; |text|cnt100:inst5|74160:inst|28                     ; out0             ;
+; |text|cnt100:inst5|74160:inst|7                      ; |text|cnt100:inst5|74160:inst|7                      ; regout           ;
+; |text|cnt100:inst5|74160:inst|11                     ; |text|cnt100:inst5|74160:inst|11                     ; out0             ;
+; |text|cnt100:inst5|74160:inst|50                     ; |text|cnt100:inst5|74160:inst|50                     ; out0             ;
+; |text|cnt100:inst5|74160:inst1|45                    ; |text|cnt100:inst5|74160:inst1|45                    ; out0             ;
+; |text|cnt100:inst5|74160:inst1|6                     ; |text|cnt100:inst5|74160:inst1|6                     ; regout           ;
+; |text|cnt100:inst5|74160:inst1|10                    ; |text|cnt100:inst5|74160:inst1|10                    ; out0             ;
+; |text|cnt100:inst5|74160:inst1|9                     ; |text|cnt100:inst5|74160:inst1|9                     ; regout           ;
+; |text|cnt100:inst5|74160:inst1|13                    ; |text|cnt100:inst5|74160:inst1|13                    ; out0             ;
+; |text|cnt100:inst5|74160:inst1|49                    ; |text|cnt100:inst5|74160:inst1|49                    ; out0             ;
+; |text|cnt100:inst5|74160:inst1|65                    ; |text|cnt100:inst5|74160:inst1|65                    ; out0             ;
+; |text|cnt100:inst5|74160:inst1|46                    ; |text|cnt100:inst5|74160:inst1|46                    ; out0             ;
+; |text|cnt100:inst5|74160:inst1|8                     ; |text|cnt100:inst5|74160:inst1|8                     ; regout           ;
+; |text|cnt100:inst5|74160:inst1|12                    ; |text|cnt100:inst5|74160:inst1|12                    ; out0             ;
+; |text|cnt100:inst5|74160:inst1|25                    ; |text|cnt100:inst5|74160:inst1|25                    ; out0             ;
+; |text|cnt100:inst5|74160:inst1|28                    ; |text|cnt100:inst5|74160:inst1|28                    ; out0             ;
+; |text|cnt100:inst5|74160:inst1|7                     ; |text|cnt100:inst5|74160:inst1|7                     ; regout           ;
+; |text|cnt100:inst5|74160:inst1|11                    ; |text|cnt100:inst5|74160:inst1|11                    ; out0             ;
+; |text|cnt100:inst5|74160:inst1|50                    ; |text|cnt100:inst5|74160:inst1|50                    ; out0             ;
+; |text|shunxumaichong:inst46|74161:inst|f74161:sub|99 ; |text|shunxumaichong:inst46|74161:inst|f74161:sub|99 ; regout           ;
+; |text|shunxumaichong:inst46|74161:inst|f74161:sub|97 ; |text|shunxumaichong:inst46|74161:inst|f74161:sub|97 ; out0             ;
+; |text|shunxumaichong:inst46|74161:inst|f74161:sub|84 ; |text|shunxumaichong:inst46|74161:inst|f74161:sub|84 ; out0             ;
+; |text|shunxumaichong:inst46|74161:inst|f74161:sub|87 ; |text|shunxumaichong:inst46|74161:inst|f74161:sub|87 ; regout           ;
+; |text|shunxumaichong:inst46|74161:inst|f74161:sub|90 ; |text|shunxumaichong:inst46|74161:inst|f74161:sub|90 ; out0             ;
+; |text|shunxumaichong:inst46|74161:inst|f74161:sub|81 ; |text|shunxumaichong:inst46|74161:inst|f74161:sub|81 ; out0             ;
+; |text|shunxumaichong:inst46|74161:inst|f74161:sub|9  ; |text|shunxumaichong:inst46|74161:inst|f74161:sub|9  ; regout           ;
+; |text|shunxumaichong:inst46|74138:inst5|20           ; |text|shunxumaichong:inst46|74138:inst5|20           ; out0             ;
+; |text|shunxumaichong:inst46|74138:inst5|19           ; |text|shunxumaichong:inst46|74138:inst5|19           ; out0             ;
+; |text|shunxumaichong:inst46|74138:inst5|18           ; |text|shunxumaichong:inst46|74138:inst5|18           ; out0             ;
+; |text|shunxumaichong:inst46|74138:inst5|16           ; |text|shunxumaichong:inst46|74138:inst5|16           ; out0             ;
+; |text|shunxumaichong:inst46|74138:inst5|15           ; |text|shunxumaichong:inst46|74138:inst5|15           ; out0             ;
+; |text|7448:inst15|69                                 ; |text|7448:inst15|69                                 ; out0             ;
+; |text|7448:inst15|36                                 ; |text|7448:inst15|36                                 ; out0             ;
+; |text|7448:inst15|39                                 ; |text|7448:inst15|39                                 ; out0             ;
+; |text|7448:inst15|35                                 ; |text|7448:inst15|35                                 ; out0             ;
+; |text|7448:inst15|68                                 ; |text|7448:inst15|68                                 ; out0             ;
+; |text|7448:inst15|34                                 ; |text|7448:inst15|34                                 ; out0             ;
+; |text|7448:inst15|7                                  ; |text|7448:inst15|7                                  ; out0             ;
+; |text|7448:inst15|8                                  ; |text|7448:inst15|8                                  ; out0             ;
+; |text|7448:inst15|70                                 ; |text|7448:inst15|70                                 ; out0             ;
+; |text|7448:inst15|33                                 ; |text|7448:inst15|33                                 ; out0             ;
+; |text|7448:inst15|6                                  ; |text|7448:inst15|6                                  ; out0             ;
+; |text|7448:inst15|67                                 ; |text|7448:inst15|67                                 ; out0             ;
+; |text|7448:inst15|5                                  ; |text|7448:inst15|5                                  ; out0             ;
+; |text|7448:inst15|3                                  ; |text|7448:inst15|3                                  ; out0             ;
+; |text|7448:inst15|4                                  ; |text|7448:inst15|4                                  ; out0             ;
+; |text|7448:inst15|71                                 ; |text|7448:inst15|71                                 ; out0             ;
+; |text|7448:inst15|32                                 ; |text|7448:inst15|32                                 ; out0             ;
+; |text|7448:inst15|66                                 ; |text|7448:inst15|66                                 ; out0             ;
+; |text|7448:inst15|31                                 ; |text|7448:inst15|31                                 ; out0             ;
+; |text|7448:inst15|2                                  ; |text|7448:inst15|2                                  ; out0             ;
+; |text|7448:inst15|30                                 ; |text|7448:inst15|30                                 ; out0             ;
+; |text|7448:inst15|72                                 ; |text|7448:inst15|72                                 ; out0             ;
+; |text|7448:inst15|1                                  ; |text|7448:inst15|1                                  ; out0             ;
+; |text|7448:inst15|38                                 ; |text|7448:inst15|38                                 ; out0             ;
+; |text|jianfa20:inst48|inst8                          ; |text|jianfa20:inst48|inst8                          ; out0             ;
+; |text|jianfa20:inst48|inst1                          ; |text|jianfa20:inst48|inst1                          ; out0             ;
+; |text|jianfa20:inst48|74190:inst5|58                 ; |text|jianfa20:inst48|74190:inst5|58                 ; out0             ;
+; |text|jianfa20:inst48|74190:inst5|51                 ; |text|jianfa20:inst48|74190:inst5|51                 ; regout           ;
+; |text|jianfa20:inst48|74190:inst5|47                 ; |text|jianfa20:inst48|74190:inst5|47                 ; out0             ;
+; |text|jianfa20:inst48|74190:inst5|39                 ; |text|jianfa20:inst48|74190:inst5|39                 ; out0             ;
+; |text|jianfa20:inst48|74190:inst5|48                 ; |text|jianfa20:inst48|74190:inst5|48                 ; regout           ;
+; |text|jianfa20:inst48|74190:inst5|49                 ; |text|jianfa20:inst48|74190:inst5|49                 ; regout           ;
+; |text|jianfa20:inst48|74190:inst5|45                 ; |text|jianfa20:inst48|74190:inst5|45                 ; out0             ;
+; |text|jianfa20:inst48|74190:inst5|63                 ; |text|jianfa20:inst48|74190:inst5|63                 ; out0             ;
+; |text|jianfa20:inst48|74190:inst5|57                 ; |text|jianfa20:inst48|74190:inst5|57                 ; out0             ;
+; |text|jianfa20:inst48|74190:inst5|50                 ; |text|jianfa20:inst48|74190:inst5|50                 ; regout           ;
+; |text|jianfa20:inst48|74190:inst5|46                 ; |text|jianfa20:inst48|74190:inst5|46                 ; out0             ;
+; |text|jianfa20:inst48|74190:inst5|40                 ; |text|jianfa20:inst48|74190:inst5|40                 ; out0             ;
+; |text|jianfa20:inst48|74190:inst5|3                  ; |text|jianfa20:inst48|74190:inst5|3                  ; out0             ;
+; |text|jianfa20:inst48|74190:inst4|51                 ; |text|jianfa20:inst48|74190:inst4|51                 ; regout           ;
+; |text|jianfa20:inst48|74190:inst4|47                 ; |text|jianfa20:inst48|74190:inst4|47                 ; out0             ;
+; |text|jianfa20:inst48|74190:inst4|39                 ; |text|jianfa20:inst48|74190:inst4|39                 ; out0             ;
+; |text|jianfa20:inst48|74190:inst4|48                 ; |text|jianfa20:inst48|74190:inst4|48                 ; regout           ;
+; |text|jianfa20:inst48|74190:inst4|49                 ; |text|jianfa20:inst48|74190:inst4|49                 ; regout           ;
+; |text|jianfa20:inst48|74190:inst4|45                 ; |text|jianfa20:inst48|74190:inst4|45                 ; out0             ;
+; |text|jianfa20:inst48|74190:inst4|63                 ; |text|jianfa20:inst48|74190:inst4|63                 ; out0             ;
+; |text|jianfa20:inst48|74190:inst4|57                 ; |text|jianfa20:inst48|74190:inst4|57                 ; out0             ;
+; |text|jianfa20:inst48|74190:inst4|50                 ; |text|jianfa20:inst48|74190:inst4|50                 ; regout           ;
+; |text|jianfa20:inst48|74190:inst4|46                 ; |text|jianfa20:inst48|74190:inst4|46                 ; out0             ;
+; |text|jianfa20:inst48|74190:inst4|40                 ; |text|jianfa20:inst48|74190:inst4|40                 ; out0             ;
+; |text|mxh:inst18|cnt100:inst|74160:inst1|45          ; |text|mxh:inst18|cnt100:inst|74160:inst1|45          ; out0             ;
+; |text|mxh:inst18|cnt100:inst|74160:inst1|9           ; |text|mxh:inst18|cnt100:inst|74160:inst1|9           ; regout           ;
+; |text|mxh:inst18|cnt100:inst|74160:inst1|13          ; |text|mxh:inst18|cnt100:inst|74160:inst1|13          ; out0             ;
+; |text|mxh:inst18|cnt100:inst|74160:inst1|49          ; |text|mxh:inst18|cnt100:inst|74160:inst1|49          ; out0             ;
+; |text|mxh:inst18|cnt100:inst|74160:inst1|46          ; |text|mxh:inst18|cnt100:inst|74160:inst1|46          ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst|45          ; |text|mxh:inst18|cnt100:inst2|74160:inst|45          ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst|6           ; |text|mxh:inst18|cnt100:inst2|74160:inst|6           ; regout           ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst|9           ; |text|mxh:inst18|cnt100:inst2|74160:inst|9           ; regout           ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst|13          ; |text|mxh:inst18|cnt100:inst2|74160:inst|13          ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst|49          ; |text|mxh:inst18|cnt100:inst2|74160:inst|49          ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst|46          ; |text|mxh:inst18|cnt100:inst2|74160:inst|46          ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst|8           ; |text|mxh:inst18|cnt100:inst2|74160:inst|8           ; regout           ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst|12          ; |text|mxh:inst18|cnt100:inst2|74160:inst|12          ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst|28          ; |text|mxh:inst18|cnt100:inst2|74160:inst|28          ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst|7           ; |text|mxh:inst18|cnt100:inst2|74160:inst|7           ; regout           ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst|11          ; |text|mxh:inst18|cnt100:inst2|74160:inst|11          ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst|50          ; |text|mxh:inst18|cnt100:inst2|74160:inst|50          ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst1|45         ; |text|mxh:inst18|cnt100:inst2|74160:inst1|45         ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst1|6          ; |text|mxh:inst18|cnt100:inst2|74160:inst1|6          ; regout           ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst1|10         ; |text|mxh:inst18|cnt100:inst2|74160:inst1|10         ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst1|9          ; |text|mxh:inst18|cnt100:inst2|74160:inst1|9          ; regout           ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst1|13         ; |text|mxh:inst18|cnt100:inst2|74160:inst1|13         ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst1|49         ; |text|mxh:inst18|cnt100:inst2|74160:inst1|49         ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst1|65         ; |text|mxh:inst18|cnt100:inst2|74160:inst1|65         ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst1|46         ; |text|mxh:inst18|cnt100:inst2|74160:inst1|46         ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst1|8          ; |text|mxh:inst18|cnt100:inst2|74160:inst1|8          ; regout           ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst1|12         ; |text|mxh:inst18|cnt100:inst2|74160:inst1|12         ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst1|25         ; |text|mxh:inst18|cnt100:inst2|74160:inst1|25         ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst1|28         ; |text|mxh:inst18|cnt100:inst2|74160:inst1|28         ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst1|7          ; |text|mxh:inst18|cnt100:inst2|74160:inst1|7          ; regout           ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst1|11         ; |text|mxh:inst18|cnt100:inst2|74160:inst1|11         ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst1|50         ; |text|mxh:inst18|cnt100:inst2|74160:inst1|50         ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst|45          ; |text|mxh:inst18|cnt100:inst4|74160:inst|45          ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst|6           ; |text|mxh:inst18|cnt100:inst4|74160:inst|6           ; regout           ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst|9           ; |text|mxh:inst18|cnt100:inst4|74160:inst|9           ; regout           ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst|13          ; |text|mxh:inst18|cnt100:inst4|74160:inst|13          ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst|49          ; |text|mxh:inst18|cnt100:inst4|74160:inst|49          ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst|46          ; |text|mxh:inst18|cnt100:inst4|74160:inst|46          ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst|8           ; |text|mxh:inst18|cnt100:inst4|74160:inst|8           ; regout           ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst|12          ; |text|mxh:inst18|cnt100:inst4|74160:inst|12          ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst|28          ; |text|mxh:inst18|cnt100:inst4|74160:inst|28          ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst|7           ; |text|mxh:inst18|cnt100:inst4|74160:inst|7           ; regout           ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst|11          ; |text|mxh:inst18|cnt100:inst4|74160:inst|11          ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst|50          ; |text|mxh:inst18|cnt100:inst4|74160:inst|50          ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst1|45         ; |text|mxh:inst18|cnt100:inst4|74160:inst1|45         ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst1|6          ; |text|mxh:inst18|cnt100:inst4|74160:inst1|6          ; regout           ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst1|10         ; |text|mxh:inst18|cnt100:inst4|74160:inst1|10         ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst1|9          ; |text|mxh:inst18|cnt100:inst4|74160:inst1|9          ; regout           ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst1|13         ; |text|mxh:inst18|cnt100:inst4|74160:inst1|13         ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst1|49         ; |text|mxh:inst18|cnt100:inst4|74160:inst1|49         ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst1|65         ; |text|mxh:inst18|cnt100:inst4|74160:inst1|65         ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst1|46         ; |text|mxh:inst18|cnt100:inst4|74160:inst1|46         ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst1|8          ; |text|mxh:inst18|cnt100:inst4|74160:inst1|8          ; regout           ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst1|12         ; |text|mxh:inst18|cnt100:inst4|74160:inst1|12         ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst1|25         ; |text|mxh:inst18|cnt100:inst4|74160:inst1|25         ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst1|28         ; |text|mxh:inst18|cnt100:inst4|74160:inst1|28         ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst1|7          ; |text|mxh:inst18|cnt100:inst4|74160:inst1|7          ; regout           ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst1|11         ; |text|mxh:inst18|cnt100:inst4|74160:inst1|11         ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst1|50         ; |text|mxh:inst18|cnt100:inst4|74160:inst1|50         ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|inst5                   ; |text|mxh:inst18|cnt25:inst3|inst5                   ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|inst6                   ; |text|mxh:inst18|cnt25:inst3|inst6                   ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|6           ; |text|mxh:inst18|cnt25:inst3|74160:inst2|6           ; regout           ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|10          ; |text|mxh:inst18|cnt25:inst3|74160:inst2|10          ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|32          ; |text|mxh:inst18|cnt25:inst3|74160:inst2|32          ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|47          ; |text|mxh:inst18|cnt25:inst3|74160:inst2|47          ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|9           ; |text|mxh:inst18|cnt25:inst3|74160:inst2|9           ; regout           ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|13          ; |text|mxh:inst18|cnt25:inst3|74160:inst2|13          ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|49          ; |text|mxh:inst18|cnt25:inst3|74160:inst2|49          ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|65          ; |text|mxh:inst18|cnt25:inst3|74160:inst2|65          ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|46          ; |text|mxh:inst18|cnt25:inst3|74160:inst2|46          ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|8           ; |text|mxh:inst18|cnt25:inst3|74160:inst2|8           ; regout           ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|12          ; |text|mxh:inst18|cnt25:inst3|74160:inst2|12          ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|27          ; |text|mxh:inst18|cnt25:inst3|74160:inst2|27          ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|25          ; |text|mxh:inst18|cnt25:inst3|74160:inst2|25          ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|28          ; |text|mxh:inst18|cnt25:inst3|74160:inst2|28          ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|7           ; |text|mxh:inst18|cnt25:inst3|74160:inst2|7           ; regout           ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|11          ; |text|mxh:inst18|cnt25:inst3|74160:inst2|11          ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|30          ; |text|mxh:inst18|cnt25:inst3|74160:inst2|30          ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|50          ; |text|mxh:inst18|cnt25:inst3|74160:inst2|50          ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst|45           ; |text|mxh:inst18|cnt25:inst3|74160:inst|45           ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst|6            ; |text|mxh:inst18|cnt25:inst3|74160:inst|6            ; regout           ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst|10           ; |text|mxh:inst18|cnt25:inst3|74160:inst|10           ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst|32           ; |text|mxh:inst18|cnt25:inst3|74160:inst|32           ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst|9            ; |text|mxh:inst18|cnt25:inst3|74160:inst|9            ; regout           ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst|13           ; |text|mxh:inst18|cnt25:inst3|74160:inst|13           ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst|49           ; |text|mxh:inst18|cnt25:inst3|74160:inst|49           ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst|46           ; |text|mxh:inst18|cnt25:inst3|74160:inst|46           ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst|8            ; |text|mxh:inst18|cnt25:inst3|74160:inst|8            ; regout           ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst|12           ; |text|mxh:inst18|cnt25:inst3|74160:inst|12           ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst|27           ; |text|mxh:inst18|cnt25:inst3|74160:inst|27           ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst|25           ; |text|mxh:inst18|cnt25:inst3|74160:inst|25           ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst|28           ; |text|mxh:inst18|cnt25:inst3|74160:inst|28           ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst|7            ; |text|mxh:inst18|cnt25:inst3|74160:inst|7            ; regout           ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst|11           ; |text|mxh:inst18|cnt25:inst3|74160:inst|11           ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst|30           ; |text|mxh:inst18|cnt25:inst3|74160:inst|30           ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst|50           ; |text|mxh:inst18|cnt25:inst3|74160:inst|50           ; out0             ;
+; |text|mxh:inst18|cnt2:inst5|inst                     ; |text|mxh:inst18|cnt2:inst5|inst                     ; regout           ;
+; |text|74153:inst6|9                                  ; |text|74153:inst6|9                                  ; out0             ;
+; |text|74153:inst6|1                                  ; |text|74153:inst6|1                                  ; out0             ;
+; |text|74153:inst6|3                                  ; |text|74153:inst6|3                                  ; out0             ;
+; |text|jianfa:inst35|inst9                            ; |text|jianfa:inst35|inst9                            ; out0             ;
+; |text|jianfa:inst35|inst6                            ; |text|jianfa:inst35|inst6                            ; out0             ;
+; |text|jianfa:inst35|inst5                            ; |text|jianfa:inst35|inst5                            ; out0             ;
+; |text|jianfa:inst35|inst7                            ; |text|jianfa:inst35|inst7                            ; out0             ;
+; |text|jianfa:inst35|74190:inst|51                    ; |text|jianfa:inst35|74190:inst|51                    ; regout           ;
+; |text|jianfa:inst35|74190:inst|47                    ; |text|jianfa:inst35|74190:inst|47                    ; out0             ;
+; |text|jianfa:inst35|74190:inst|39                    ; |text|jianfa:inst35|74190:inst|39                    ; out0             ;
+; |text|jianfa:inst35|74190:inst|48                    ; |text|jianfa:inst35|74190:inst|48                    ; regout           ;
+; |text|jianfa:inst35|74190:inst|49                    ; |text|jianfa:inst35|74190:inst|49                    ; regout           ;
+; |text|jianfa:inst35|74190:inst|45                    ; |text|jianfa:inst35|74190:inst|45                    ; out0             ;
+; |text|jianfa:inst35|74190:inst|63                    ; |text|jianfa:inst35|74190:inst|63                    ; out0             ;
+; |text|jianfa:inst35|74190:inst|57                    ; |text|jianfa:inst35|74190:inst|57                    ; out0             ;
+; |text|jianfa:inst35|74190:inst|50                    ; |text|jianfa:inst35|74190:inst|50                    ; regout           ;
+; |text|jianfa:inst35|74190:inst|46                    ; |text|jianfa:inst35|74190:inst|46                    ; out0             ;
+; |text|jianfa:inst35|74190:inst|40                    ; |text|jianfa:inst35|74190:inst|40                    ; out0             ;
+; |text|74160:inst300|6                                ; |text|74160:inst300|6                                ; regout           ;
+; |text|74160:inst300|10                               ; |text|74160:inst300|10                               ; out0             ;
+; |text|74160:inst300|32                               ; |text|74160:inst300|32                               ; out0             ;
+; |text|74160:inst300|9                                ; |text|74160:inst300|9                                ; regout           ;
+; |text|74160:inst300|13                               ; |text|74160:inst300|13                               ; out0             ;
+; |text|74160:inst300|49                               ; |text|74160:inst300|49                               ; out0             ;
+; |text|74160:inst300|46                               ; |text|74160:inst300|46                               ; out0             ;
+; |text|74160:inst300|8                                ; |text|74160:inst300|8                                ; regout           ;
+; |text|74160:inst300|12                               ; |text|74160:inst300|12                               ; out0             ;
+; |text|74160:inst300|27                               ; |text|74160:inst300|27                               ; out0             ;
+; |text|74160:inst300|25                               ; |text|74160:inst300|25                               ; out0             ;
+; |text|74160:inst300|28                               ; |text|74160:inst300|28                               ; out0             ;
+; |text|74160:inst300|7                                ; |text|74160:inst300|7                                ; regout           ;
+; |text|74160:inst300|11                               ; |text|74160:inst300|11                               ; out0             ;
+; |text|74160:inst300|30                               ; |text|74160:inst300|30                               ; out0             ;
+; |text|74160:inst300|50                               ; |text|74160:inst300|50                               ; out0             ;
++------------------------------------------------------+------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                       ;
++------------------------------------------------------+------------------------------------------------------+------------------+
+; Node Name                                            ; Output Port Name                                     ; Output Port Type ;
++------------------------------------------------------+------------------------------------------------------+------------------+
+; |text|ledR1                                          ; |text|ledR1                                          ; pin_out          ;
+; |text|inst                                           ; |text|inst                                           ; out0             ;
+; |text|inst31                                         ; |text|inst31                                         ; out0             ;
+; |text|inst30                                         ; |text|inst30                                         ; out0             ;
+; |text|inst7                                          ; |text|inst7                                          ; out0             ;
+; |text|ledY1                                          ; |text|ledY1                                          ; pin_out          ;
+; |text|inst13                                         ; |text|inst13                                         ; out0             ;
+; |text|ledG1                                          ; |text|ledG1                                          ; pin_out          ;
+; |text|inst12                                         ; |text|inst12                                         ; out0             ;
+; |text|ledr2                                          ; |text|ledr2                                          ; pin_out          ;
+; |text|ledy2                                          ; |text|ledy2                                          ; pin_out          ;
+; |text|inst14                                         ; |text|inst14                                         ; out0             ;
+; |text|ledg2                                          ; |text|ledg2                                          ; pin_out          ;
+; |text|inst11                                         ; |text|inst11                                         ; out0             ;
+; |text|SEG1                                           ; |text|SEG1                                           ; pin_out          ;
+; |text|inst53                                         ; |text|inst53                                         ; out0             ;
+; |text|inst37                                         ; |text|inst37                                         ; out0             ;
+; |text|inst43                                         ; |text|inst43                                         ; out0             ;
+; |text|inst38                                         ; |text|inst38                                         ; out0             ;
+; |text|inst50                                         ; |text|inst50                                         ; out0             ;
+; |text|inst55                                         ; |text|inst55                                         ; out0             ;
+; |text|inst41                                         ; |text|inst41                                         ; out0             ;
+; |text|inst47                                         ; |text|inst47                                         ; out0             ;
+; |text|inst42                                         ; |text|inst42                                         ; out0             ;
+; |text|inst58                                         ; |text|inst58                                         ; out0             ;
+; |text|inst40                                         ; |text|inst40                                         ; out0             ;
+; |text|inst52                                         ; |text|inst52                                         ; out0             ;
+; |text|inst66                                         ; |text|inst66                                         ; out0             ;
+; |text|inst68                                         ; |text|inst68                                         ; out0             ;
+; |text|inst67                                         ; |text|inst67                                         ; out0             ;
+; |text|inst70                                         ; |text|inst70                                         ; out0             ;
+; |text|inst69                                         ; |text|inst69                                         ; out0             ;
+; |text|inst72                                         ; |text|inst72                                         ; out0             ;
+; |text|inst74                                         ; |text|inst74                                         ; out0             ;
+; |text|inst73                                         ; |text|inst73                                         ; out0             ;
+; |text|inst76                                         ; |text|inst76                                         ; out0             ;
+; |text|inst75                                         ; |text|inst75                                         ; out0             ;
+; |text|inst59                                         ; |text|inst59                                         ; out0             ;
+; |text|inst63                                         ; |text|inst63                                         ; out0             ;
+; |text|inst62                                         ; |text|inst62                                         ; out0             ;
+; |text|inst65                                         ; |text|inst65                                         ; out0             ;
+; |text|inst64                                         ; |text|inst64                                         ; out0             ;
+; |text|SEG2                                           ; |text|SEG2                                           ; pin_out          ;
+; |text|SEG3                                           ; |text|SEG3                                           ; pin_out          ;
+; |text|SEG4                                           ; |text|SEG4                                           ; pin_out          ;
+; |text|SEG5                                           ; |text|SEG5                                           ; pin_out          ;
+; |text|SEG6                                           ; |text|SEG6                                           ; pin_out          ;
+; |text|SEG7                                           ; |text|SEG7                                           ; pin_out          ;
+; |text|s1                                             ; |text|s1                                             ; pin_out          ;
+; |text|s2                                             ; |text|s2                                             ; pin_out          ;
+; |text|s4                                             ; |text|s4                                             ; pin_out          ;
+; |text|s5                                             ; |text|s5                                             ; pin_out          ;
+; |text|s6                                             ; |text|s6                                             ; pin_out          ;
+; |text|inst60                                         ; |text|inst60                                         ; out0             ;
+; |text|inst71                                         ; |text|inst71                                         ; out0             ;
+; |text|inst77                                         ; |text|inst77                                         ; out0             ;
+; |text|inst61                                         ; |text|inst61                                         ; out0             ;
+; |text|cnt100:inst4|74160:inst1|45                    ; |text|cnt100:inst4|74160:inst1|45                    ; out0             ;
+; |text|cnt100:inst4|74160:inst1|9                     ; |text|cnt100:inst4|74160:inst1|9                     ; regout           ;
+; |text|cnt100:inst4|74160:inst1|13                    ; |text|cnt100:inst4|74160:inst1|13                    ; out0             ;
+; |text|cnt100:inst4|74160:inst1|49                    ; |text|cnt100:inst4|74160:inst1|49                    ; out0             ;
+; |text|cnt100:inst4|74160:inst1|46                    ; |text|cnt100:inst4|74160:inst1|46                    ; out0             ;
+; |text|cnt100:inst4|74160:inst1|8                     ; |text|cnt100:inst4|74160:inst1|8                     ; regout           ;
+; |text|cnt100:inst5|74160:inst|45                     ; |text|cnt100:inst5|74160:inst|45                     ; out0             ;
+; |text|cnt100:inst5|74160:inst|6                      ; |text|cnt100:inst5|74160:inst|6                      ; regout           ;
+; |text|cnt100:inst5|74160:inst|9                      ; |text|cnt100:inst5|74160:inst|9                      ; regout           ;
+; |text|cnt100:inst5|74160:inst|13                     ; |text|cnt100:inst5|74160:inst|13                     ; out0             ;
+; |text|cnt100:inst5|74160:inst|49                     ; |text|cnt100:inst5|74160:inst|49                     ; out0             ;
+; |text|cnt100:inst5|74160:inst|46                     ; |text|cnt100:inst5|74160:inst|46                     ; out0             ;
+; |text|cnt100:inst5|74160:inst|8                      ; |text|cnt100:inst5|74160:inst|8                      ; regout           ;
+; |text|cnt100:inst5|74160:inst|12                     ; |text|cnt100:inst5|74160:inst|12                     ; out0             ;
+; |text|cnt100:inst5|74160:inst|28                     ; |text|cnt100:inst5|74160:inst|28                     ; out0             ;
+; |text|cnt100:inst5|74160:inst|7                      ; |text|cnt100:inst5|74160:inst|7                      ; regout           ;
+; |text|cnt100:inst5|74160:inst|11                     ; |text|cnt100:inst5|74160:inst|11                     ; out0             ;
+; |text|cnt100:inst5|74160:inst|50                     ; |text|cnt100:inst5|74160:inst|50                     ; out0             ;
+; |text|cnt100:inst5|74160:inst1|45                    ; |text|cnt100:inst5|74160:inst1|45                    ; out0             ;
+; |text|cnt100:inst5|74160:inst1|6                     ; |text|cnt100:inst5|74160:inst1|6                     ; regout           ;
+; |text|cnt100:inst5|74160:inst1|10                    ; |text|cnt100:inst5|74160:inst1|10                    ; out0             ;
+; |text|cnt100:inst5|74160:inst1|9                     ; |text|cnt100:inst5|74160:inst1|9                     ; regout           ;
+; |text|cnt100:inst5|74160:inst1|13                    ; |text|cnt100:inst5|74160:inst1|13                    ; out0             ;
+; |text|cnt100:inst5|74160:inst1|49                    ; |text|cnt100:inst5|74160:inst1|49                    ; out0             ;
+; |text|cnt100:inst5|74160:inst1|65                    ; |text|cnt100:inst5|74160:inst1|65                    ; out0             ;
+; |text|cnt100:inst5|74160:inst1|46                    ; |text|cnt100:inst5|74160:inst1|46                    ; out0             ;
+; |text|cnt100:inst5|74160:inst1|8                     ; |text|cnt100:inst5|74160:inst1|8                     ; regout           ;
+; |text|cnt100:inst5|74160:inst1|12                    ; |text|cnt100:inst5|74160:inst1|12                    ; out0             ;
+; |text|cnt100:inst5|74160:inst1|25                    ; |text|cnt100:inst5|74160:inst1|25                    ; out0             ;
+; |text|cnt100:inst5|74160:inst1|28                    ; |text|cnt100:inst5|74160:inst1|28                    ; out0             ;
+; |text|cnt100:inst5|74160:inst1|7                     ; |text|cnt100:inst5|74160:inst1|7                     ; regout           ;
+; |text|cnt100:inst5|74160:inst1|11                    ; |text|cnt100:inst5|74160:inst1|11                    ; out0             ;
+; |text|cnt100:inst5|74160:inst1|50                    ; |text|cnt100:inst5|74160:inst1|50                    ; out0             ;
+; |text|shunxumaichong:inst46|74161:inst|f74161:sub|99 ; |text|shunxumaichong:inst46|74161:inst|f74161:sub|99 ; regout           ;
+; |text|shunxumaichong:inst46|74161:inst|f74161:sub|97 ; |text|shunxumaichong:inst46|74161:inst|f74161:sub|97 ; out0             ;
+; |text|shunxumaichong:inst46|74161:inst|f74161:sub|84 ; |text|shunxumaichong:inst46|74161:inst|f74161:sub|84 ; out0             ;
+; |text|shunxumaichong:inst46|74161:inst|f74161:sub|87 ; |text|shunxumaichong:inst46|74161:inst|f74161:sub|87 ; regout           ;
+; |text|shunxumaichong:inst46|74161:inst|f74161:sub|90 ; |text|shunxumaichong:inst46|74161:inst|f74161:sub|90 ; out0             ;
+; |text|shunxumaichong:inst46|74161:inst|f74161:sub|81 ; |text|shunxumaichong:inst46|74161:inst|f74161:sub|81 ; out0             ;
+; |text|shunxumaichong:inst46|74161:inst|f74161:sub|9  ; |text|shunxumaichong:inst46|74161:inst|f74161:sub|9  ; regout           ;
+; |text|shunxumaichong:inst46|74138:inst5|20           ; |text|shunxumaichong:inst46|74138:inst5|20           ; out0             ;
+; |text|shunxumaichong:inst46|74138:inst5|19           ; |text|shunxumaichong:inst46|74138:inst5|19           ; out0             ;
+; |text|shunxumaichong:inst46|74138:inst5|18           ; |text|shunxumaichong:inst46|74138:inst5|18           ; out0             ;
+; |text|shunxumaichong:inst46|74138:inst5|16           ; |text|shunxumaichong:inst46|74138:inst5|16           ; out0             ;
+; |text|shunxumaichong:inst46|74138:inst5|15           ; |text|shunxumaichong:inst46|74138:inst5|15           ; out0             ;
+; |text|7448:inst15|69                                 ; |text|7448:inst15|69                                 ; out0             ;
+; |text|7448:inst15|36                                 ; |text|7448:inst15|36                                 ; out0             ;
+; |text|7448:inst15|39                                 ; |text|7448:inst15|39                                 ; out0             ;
+; |text|7448:inst15|35                                 ; |text|7448:inst15|35                                 ; out0             ;
+; |text|7448:inst15|68                                 ; |text|7448:inst15|68                                 ; out0             ;
+; |text|7448:inst15|34                                 ; |text|7448:inst15|34                                 ; out0             ;
+; |text|7448:inst15|7                                  ; |text|7448:inst15|7                                  ; out0             ;
+; |text|7448:inst15|8                                  ; |text|7448:inst15|8                                  ; out0             ;
+; |text|7448:inst15|70                                 ; |text|7448:inst15|70                                 ; out0             ;
+; |text|7448:inst15|33                                 ; |text|7448:inst15|33                                 ; out0             ;
+; |text|7448:inst15|6                                  ; |text|7448:inst15|6                                  ; out0             ;
+; |text|7448:inst15|67                                 ; |text|7448:inst15|67                                 ; out0             ;
+; |text|7448:inst15|5                                  ; |text|7448:inst15|5                                  ; out0             ;
+; |text|7448:inst15|3                                  ; |text|7448:inst15|3                                  ; out0             ;
+; |text|7448:inst15|4                                  ; |text|7448:inst15|4                                  ; out0             ;
+; |text|7448:inst15|71                                 ; |text|7448:inst15|71                                 ; out0             ;
+; |text|7448:inst15|32                                 ; |text|7448:inst15|32                                 ; out0             ;
+; |text|7448:inst15|66                                 ; |text|7448:inst15|66                                 ; out0             ;
+; |text|7448:inst15|31                                 ; |text|7448:inst15|31                                 ; out0             ;
+; |text|7448:inst15|2                                  ; |text|7448:inst15|2                                  ; out0             ;
+; |text|7448:inst15|30                                 ; |text|7448:inst15|30                                 ; out0             ;
+; |text|7448:inst15|72                                 ; |text|7448:inst15|72                                 ; out0             ;
+; |text|7448:inst15|1                                  ; |text|7448:inst15|1                                  ; out0             ;
+; |text|7448:inst15|38                                 ; |text|7448:inst15|38                                 ; out0             ;
+; |text|jianfa20:inst48|inst8                          ; |text|jianfa20:inst48|inst8                          ; out0             ;
+; |text|jianfa20:inst48|inst1                          ; |text|jianfa20:inst48|inst1                          ; out0             ;
+; |text|jianfa20:inst48|74190:inst5|58                 ; |text|jianfa20:inst48|74190:inst5|58                 ; out0             ;
+; |text|jianfa20:inst48|74190:inst5|51                 ; |text|jianfa20:inst48|74190:inst5|51                 ; regout           ;
+; |text|jianfa20:inst48|74190:inst5|47                 ; |text|jianfa20:inst48|74190:inst5|47                 ; out0             ;
+; |text|jianfa20:inst48|74190:inst5|39                 ; |text|jianfa20:inst48|74190:inst5|39                 ; out0             ;
+; |text|jianfa20:inst48|74190:inst5|48                 ; |text|jianfa20:inst48|74190:inst5|48                 ; regout           ;
+; |text|jianfa20:inst48|74190:inst5|49                 ; |text|jianfa20:inst48|74190:inst5|49                 ; regout           ;
+; |text|jianfa20:inst48|74190:inst5|45                 ; |text|jianfa20:inst48|74190:inst5|45                 ; out0             ;
+; |text|jianfa20:inst48|74190:inst5|63                 ; |text|jianfa20:inst48|74190:inst5|63                 ; out0             ;
+; |text|jianfa20:inst48|74190:inst5|57                 ; |text|jianfa20:inst48|74190:inst5|57                 ; out0             ;
+; |text|jianfa20:inst48|74190:inst5|50                 ; |text|jianfa20:inst48|74190:inst5|50                 ; regout           ;
+; |text|jianfa20:inst48|74190:inst5|46                 ; |text|jianfa20:inst48|74190:inst5|46                 ; out0             ;
+; |text|jianfa20:inst48|74190:inst5|40                 ; |text|jianfa20:inst48|74190:inst5|40                 ; out0             ;
+; |text|jianfa20:inst48|74190:inst5|3                  ; |text|jianfa20:inst48|74190:inst5|3                  ; out0             ;
+; |text|jianfa20:inst48|74190:inst4|51                 ; |text|jianfa20:inst48|74190:inst4|51                 ; regout           ;
+; |text|jianfa20:inst48|74190:inst4|47                 ; |text|jianfa20:inst48|74190:inst4|47                 ; out0             ;
+; |text|jianfa20:inst48|74190:inst4|39                 ; |text|jianfa20:inst48|74190:inst4|39                 ; out0             ;
+; |text|jianfa20:inst48|74190:inst4|48                 ; |text|jianfa20:inst48|74190:inst4|48                 ; regout           ;
+; |text|jianfa20:inst48|74190:inst4|49                 ; |text|jianfa20:inst48|74190:inst4|49                 ; regout           ;
+; |text|jianfa20:inst48|74190:inst4|45                 ; |text|jianfa20:inst48|74190:inst4|45                 ; out0             ;
+; |text|jianfa20:inst48|74190:inst4|63                 ; |text|jianfa20:inst48|74190:inst4|63                 ; out0             ;
+; |text|jianfa20:inst48|74190:inst4|57                 ; |text|jianfa20:inst48|74190:inst4|57                 ; out0             ;
+; |text|jianfa20:inst48|74190:inst4|50                 ; |text|jianfa20:inst48|74190:inst4|50                 ; regout           ;
+; |text|jianfa20:inst48|74190:inst4|46                 ; |text|jianfa20:inst48|74190:inst4|46                 ; out0             ;
+; |text|jianfa20:inst48|74190:inst4|40                 ; |text|jianfa20:inst48|74190:inst4|40                 ; out0             ;
+; |text|mxh:inst18|cnt100:inst|74160:inst1|45          ; |text|mxh:inst18|cnt100:inst|74160:inst1|45          ; out0             ;
+; |text|mxh:inst18|cnt100:inst|74160:inst1|9           ; |text|mxh:inst18|cnt100:inst|74160:inst1|9           ; regout           ;
+; |text|mxh:inst18|cnt100:inst|74160:inst1|13          ; |text|mxh:inst18|cnt100:inst|74160:inst1|13          ; out0             ;
+; |text|mxh:inst18|cnt100:inst|74160:inst1|49          ; |text|mxh:inst18|cnt100:inst|74160:inst1|49          ; out0             ;
+; |text|mxh:inst18|cnt100:inst|74160:inst1|46          ; |text|mxh:inst18|cnt100:inst|74160:inst1|46          ; out0             ;
+; |text|mxh:inst18|cnt100:inst|74160:inst1|8           ; |text|mxh:inst18|cnt100:inst|74160:inst1|8           ; regout           ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst|45          ; |text|mxh:inst18|cnt100:inst2|74160:inst|45          ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst|6           ; |text|mxh:inst18|cnt100:inst2|74160:inst|6           ; regout           ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst|9           ; |text|mxh:inst18|cnt100:inst2|74160:inst|9           ; regout           ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst|13          ; |text|mxh:inst18|cnt100:inst2|74160:inst|13          ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst|49          ; |text|mxh:inst18|cnt100:inst2|74160:inst|49          ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst|46          ; |text|mxh:inst18|cnt100:inst2|74160:inst|46          ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst|8           ; |text|mxh:inst18|cnt100:inst2|74160:inst|8           ; regout           ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst|12          ; |text|mxh:inst18|cnt100:inst2|74160:inst|12          ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst|28          ; |text|mxh:inst18|cnt100:inst2|74160:inst|28          ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst|7           ; |text|mxh:inst18|cnt100:inst2|74160:inst|7           ; regout           ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst|11          ; |text|mxh:inst18|cnt100:inst2|74160:inst|11          ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst|50          ; |text|mxh:inst18|cnt100:inst2|74160:inst|50          ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst1|45         ; |text|mxh:inst18|cnt100:inst2|74160:inst1|45         ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst1|6          ; |text|mxh:inst18|cnt100:inst2|74160:inst1|6          ; regout           ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst1|10         ; |text|mxh:inst18|cnt100:inst2|74160:inst1|10         ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst1|9          ; |text|mxh:inst18|cnt100:inst2|74160:inst1|9          ; regout           ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst1|13         ; |text|mxh:inst18|cnt100:inst2|74160:inst1|13         ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst1|49         ; |text|mxh:inst18|cnt100:inst2|74160:inst1|49         ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst1|65         ; |text|mxh:inst18|cnt100:inst2|74160:inst1|65         ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst1|46         ; |text|mxh:inst18|cnt100:inst2|74160:inst1|46         ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst1|8          ; |text|mxh:inst18|cnt100:inst2|74160:inst1|8          ; regout           ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst1|12         ; |text|mxh:inst18|cnt100:inst2|74160:inst1|12         ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst1|25         ; |text|mxh:inst18|cnt100:inst2|74160:inst1|25         ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst1|28         ; |text|mxh:inst18|cnt100:inst2|74160:inst1|28         ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst1|7          ; |text|mxh:inst18|cnt100:inst2|74160:inst1|7          ; regout           ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst1|11         ; |text|mxh:inst18|cnt100:inst2|74160:inst1|11         ; out0             ;
+; |text|mxh:inst18|cnt100:inst2|74160:inst1|50         ; |text|mxh:inst18|cnt100:inst2|74160:inst1|50         ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst|45          ; |text|mxh:inst18|cnt100:inst4|74160:inst|45          ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst|6           ; |text|mxh:inst18|cnt100:inst4|74160:inst|6           ; regout           ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst|9           ; |text|mxh:inst18|cnt100:inst4|74160:inst|9           ; regout           ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst|13          ; |text|mxh:inst18|cnt100:inst4|74160:inst|13          ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst|49          ; |text|mxh:inst18|cnt100:inst4|74160:inst|49          ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst|46          ; |text|mxh:inst18|cnt100:inst4|74160:inst|46          ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst|8           ; |text|mxh:inst18|cnt100:inst4|74160:inst|8           ; regout           ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst|12          ; |text|mxh:inst18|cnt100:inst4|74160:inst|12          ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst|28          ; |text|mxh:inst18|cnt100:inst4|74160:inst|28          ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst|7           ; |text|mxh:inst18|cnt100:inst4|74160:inst|7           ; regout           ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst|11          ; |text|mxh:inst18|cnt100:inst4|74160:inst|11          ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst|50          ; |text|mxh:inst18|cnt100:inst4|74160:inst|50          ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst1|45         ; |text|mxh:inst18|cnt100:inst4|74160:inst1|45         ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst1|6          ; |text|mxh:inst18|cnt100:inst4|74160:inst1|6          ; regout           ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst1|10         ; |text|mxh:inst18|cnt100:inst4|74160:inst1|10         ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst1|9          ; |text|mxh:inst18|cnt100:inst4|74160:inst1|9          ; regout           ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst1|13         ; |text|mxh:inst18|cnt100:inst4|74160:inst1|13         ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst1|49         ; |text|mxh:inst18|cnt100:inst4|74160:inst1|49         ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst1|65         ; |text|mxh:inst18|cnt100:inst4|74160:inst1|65         ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst1|46         ; |text|mxh:inst18|cnt100:inst4|74160:inst1|46         ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst1|8          ; |text|mxh:inst18|cnt100:inst4|74160:inst1|8          ; regout           ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst1|12         ; |text|mxh:inst18|cnt100:inst4|74160:inst1|12         ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst1|25         ; |text|mxh:inst18|cnt100:inst4|74160:inst1|25         ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst1|28         ; |text|mxh:inst18|cnt100:inst4|74160:inst1|28         ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst1|7          ; |text|mxh:inst18|cnt100:inst4|74160:inst1|7          ; regout           ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst1|11         ; |text|mxh:inst18|cnt100:inst4|74160:inst1|11         ; out0             ;
+; |text|mxh:inst18|cnt100:inst4|74160:inst1|50         ; |text|mxh:inst18|cnt100:inst4|74160:inst1|50         ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|inst5                   ; |text|mxh:inst18|cnt25:inst3|inst5                   ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|inst6                   ; |text|mxh:inst18|cnt25:inst3|inst6                   ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|6           ; |text|mxh:inst18|cnt25:inst3|74160:inst2|6           ; regout           ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|10          ; |text|mxh:inst18|cnt25:inst3|74160:inst2|10          ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|32          ; |text|mxh:inst18|cnt25:inst3|74160:inst2|32          ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|47          ; |text|mxh:inst18|cnt25:inst3|74160:inst2|47          ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|9           ; |text|mxh:inst18|cnt25:inst3|74160:inst2|9           ; regout           ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|13          ; |text|mxh:inst18|cnt25:inst3|74160:inst2|13          ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|49          ; |text|mxh:inst18|cnt25:inst3|74160:inst2|49          ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|65          ; |text|mxh:inst18|cnt25:inst3|74160:inst2|65          ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|46          ; |text|mxh:inst18|cnt25:inst3|74160:inst2|46          ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|8           ; |text|mxh:inst18|cnt25:inst3|74160:inst2|8           ; regout           ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|12          ; |text|mxh:inst18|cnt25:inst3|74160:inst2|12          ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|27          ; |text|mxh:inst18|cnt25:inst3|74160:inst2|27          ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|25          ; |text|mxh:inst18|cnt25:inst3|74160:inst2|25          ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|28          ; |text|mxh:inst18|cnt25:inst3|74160:inst2|28          ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|7           ; |text|mxh:inst18|cnt25:inst3|74160:inst2|7           ; regout           ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|11          ; |text|mxh:inst18|cnt25:inst3|74160:inst2|11          ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|30          ; |text|mxh:inst18|cnt25:inst3|74160:inst2|30          ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst2|50          ; |text|mxh:inst18|cnt25:inst3|74160:inst2|50          ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst|45           ; |text|mxh:inst18|cnt25:inst3|74160:inst|45           ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst|6            ; |text|mxh:inst18|cnt25:inst3|74160:inst|6            ; regout           ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst|10           ; |text|mxh:inst18|cnt25:inst3|74160:inst|10           ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst|32           ; |text|mxh:inst18|cnt25:inst3|74160:inst|32           ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst|9            ; |text|mxh:inst18|cnt25:inst3|74160:inst|9            ; regout           ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst|13           ; |text|mxh:inst18|cnt25:inst3|74160:inst|13           ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst|49           ; |text|mxh:inst18|cnt25:inst3|74160:inst|49           ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst|46           ; |text|mxh:inst18|cnt25:inst3|74160:inst|46           ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst|8            ; |text|mxh:inst18|cnt25:inst3|74160:inst|8            ; regout           ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst|12           ; |text|mxh:inst18|cnt25:inst3|74160:inst|12           ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst|27           ; |text|mxh:inst18|cnt25:inst3|74160:inst|27           ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst|25           ; |text|mxh:inst18|cnt25:inst3|74160:inst|25           ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst|28           ; |text|mxh:inst18|cnt25:inst3|74160:inst|28           ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst|7            ; |text|mxh:inst18|cnt25:inst3|74160:inst|7            ; regout           ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst|11           ; |text|mxh:inst18|cnt25:inst3|74160:inst|11           ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst|30           ; |text|mxh:inst18|cnt25:inst3|74160:inst|30           ; out0             ;
+; |text|mxh:inst18|cnt25:inst3|74160:inst|50           ; |text|mxh:inst18|cnt25:inst3|74160:inst|50           ; out0             ;
+; |text|mxh:inst18|cnt2:inst5|inst                     ; |text|mxh:inst18|cnt2:inst5|inst                     ; regout           ;
+; |text|74153:inst6|9                                  ; |text|74153:inst6|9                                  ; out0             ;
+; |text|74153:inst6|1                                  ; |text|74153:inst6|1                                  ; out0             ;
+; |text|74153:inst6|3                                  ; |text|74153:inst6|3                                  ; out0             ;
+; |text|jianfa:inst35|inst9                            ; |text|jianfa:inst35|inst9                            ; out0             ;
+; |text|jianfa:inst35|inst6                            ; |text|jianfa:inst35|inst6                            ; out0             ;
+; |text|jianfa:inst35|inst5                            ; |text|jianfa:inst35|inst5                            ; out0             ;
+; |text|jianfa:inst35|inst7                            ; |text|jianfa:inst35|inst7                            ; out0             ;
+; |text|jianfa:inst35|74190:inst|51                    ; |text|jianfa:inst35|74190:inst|51                    ; regout           ;
+; |text|jianfa:inst35|74190:inst|47                    ; |text|jianfa:inst35|74190:inst|47                    ; out0             ;
+; |text|jianfa:inst35|74190:inst|39                    ; |text|jianfa:inst35|74190:inst|39                    ; out0             ;
+; |text|jianfa:inst35|74190:inst|48                    ; |text|jianfa:inst35|74190:inst|48                    ; regout           ;
+; |text|jianfa:inst35|74190:inst|49                    ; |text|jianfa:inst35|74190:inst|49                    ; regout           ;
+; |text|jianfa:inst35|74190:inst|45                    ; |text|jianfa:inst35|74190:inst|45                    ; out0             ;
+; |text|jianfa:inst35|74190:inst|63                    ; |text|jianfa:inst35|74190:inst|63                    ; out0             ;
+; |text|jianfa:inst35|74190:inst|57                    ; |text|jianfa:inst35|74190:inst|57                    ; out0             ;
+; |text|jianfa:inst35|74190:inst|50                    ; |text|jianfa:inst35|74190:inst|50                    ; regout           ;
+; |text|jianfa:inst35|74190:inst|46                    ; |text|jianfa:inst35|74190:inst|46                    ; out0             ;
+; |text|jianfa:inst35|74190:inst|40                    ; |text|jianfa:inst35|74190:inst|40                    ; out0             ;
+; |text|74160:inst300|6                                ; |text|74160:inst300|6                                ; regout           ;
+; |text|74160:inst300|10                               ; |text|74160:inst300|10                               ; out0             ;
+; |text|74160:inst300|32                               ; |text|74160:inst300|32                               ; out0             ;
+; |text|74160:inst300|9                                ; |text|74160:inst300|9                                ; regout           ;
+; |text|74160:inst300|13                               ; |text|74160:inst300|13                               ; out0             ;
+; |text|74160:inst300|49                               ; |text|74160:inst300|49                               ; out0             ;
+; |text|74160:inst300|46                               ; |text|74160:inst300|46                               ; out0             ;
+; |text|74160:inst300|8                                ; |text|74160:inst300|8                                ; regout           ;
+; |text|74160:inst300|12                               ; |text|74160:inst300|12                               ; out0             ;
+; |text|74160:inst300|27                               ; |text|74160:inst300|27                               ; out0             ;
+; |text|74160:inst300|25                               ; |text|74160:inst300|25                               ; out0             ;
+; |text|74160:inst300|28                               ; |text|74160:inst300|28                               ; out0             ;
+; |text|74160:inst300|7                                ; |text|74160:inst300|7                                ; regout           ;
+; |text|74160:inst300|11                               ; |text|74160:inst300|11                               ; out0             ;
+; |text|74160:inst300|30                               ; |text|74160:inst300|30                               ; out0             ;
+; |text|74160:inst300|50                               ; |text|74160:inst300|50                               ; out0             ;
++------------------------------------------------------+------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
+    Info: Processing started: Fri Jun 07 00:25:21 2024
+Info: Command: quartus_sim --simulation_results_format=VWF finalexam -c finalexam_qsim
+Info (324025): Using vector source file "E:/Quartus13.0_project/final exam/output_files/Waveform.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      13.15 %
+Info (328052): Number of transitions in simulation is 835
+Info (324045): Vector file finalexam_qsim.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4452 megabytes
+    Info: Processing ended: Fri Jun 07 00:25:22 2024
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+
